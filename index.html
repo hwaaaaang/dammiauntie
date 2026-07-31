@@ -1,20 +1,335 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강이담의 돌잔치에 초대합니다</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 카카오톡/문자 공유 시 표시될 정보 -->
+  <meta property="og:title" content="서준 ♥ 다미 결혼합니다">
+  <meta property="og:description" content="2026년 10월 24일 토요일 오후 2시">
+  <meta property="og:image" content="./images/main-photo.svg">
+
+  <title>서준 ♥ 다미 모바일 청첩장</title>
+
+  <!-- 무료 한글 웹폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Italiana&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1> 강이담의 첫 번째 생일을 박수와 함께 맞이해주시죠 </h1>
-    <img src="images/goodpepe.jpg" alt="ddabong">
-    <p> 2026년 8월 15일 다이닝원 초밥 야르</p>
-    <img src="images/diningone.jpg" alt="sushi">
+  <!-- 처음 접속했을 때 보이는 표지 -->
+  <div class="opening" id="opening">
+    <div class="opening__wash opening__wash--top"></div>
+    <div class="opening__wash opening__wash--bottom"></div>
 
-    <script src="script.js"></script>
+    <div class="opening__content">
+      <p class="eyebrow">WEDDING INVITATION</p>
+      <h1>
+        서준
+        <span class="opening__and">&</span>
+        다미
+      </h1>
+      <p class="opening__date">2026. 10. 24. SAT. 2:00 PM</p>
+      <button class="primary-button" id="openInvitation" type="button">
+        초대장 열기
+      </button>
+    </div>
+  </div>
+
+  <main class="page">
+    <!-- 메인 -->
+    <section class="hero section">
+      <div class="watercolor watercolor--pink"></div>
+      <div class="watercolor watercolor--green"></div>
+
+      <p class="eyebrow reveal">WEDDING INVITATION</p>
+
+      <h1 class="hero__names reveal">
+        서준
+        <span>&</span>
+        다미
+      </h1>
+
+      <p class="hero__date reveal">
+        2026년 10월 24일 토요일 오후 2시<br>
+        라온웨딩홀 3층 그랜드홀
+      </p>
+
+      <figure class="hero__photo reveal">
+        <img src="./images/main-photo.svg" alt="신랑 신부 메인 사진">
+      </figure>
+
+      <p class="hero__quote reveal">
+        서로의 하루에 가장 다정한 사람이 되어<br>
+        같은 방향을 바라보며 걸어가겠습니다.
+      </p>
+    </section>
+
+    <!-- 결혼식까지 남은 시간 -->
+    <section class="section countdown-section">
+      <p class="section-kicker reveal">THE WEDDING DAY</p>
+      <h2 class="section-title reveal">우리의 결혼식까지</h2>
+
+      <div class="countdown reveal" aria-label="결혼식까지 남은 시간">
+        <div>
+          <strong id="days">0</strong>
+          <span>일</span>
+        </div>
+        <i>:</i>
+        <div>
+          <strong id="hours">0</strong>
+          <span>시간</span>
+        </div>
+        <i>:</i>
+        <div>
+          <strong id="minutes">0</strong>
+          <span>분</span>
+        </div>
+        <i>:</i>
+        <div>
+          <strong id="seconds">0</strong>
+          <span>초</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 초대 문구 -->
+    <section class="section invitation">
+      <div class="leaf-mark reveal" aria-hidden="true">❦</div>
+      <h2 class="section-title reveal">소중한 분들을 초대합니다</h2>
+
+      <p class="invitation__message reveal">
+        따뜻한 봄날에 처음 만나<br>
+        함께한 계절만큼 서로를 닮아왔습니다.<br><br>
+        이제 두 사람이 한 가정을 이루는 첫걸음에<br>
+        귀한 걸음으로 축복해 주시면 감사하겠습니다.
+      </p>
+
+      <div class="family reveal">
+        <p>
+          <span>김아버지 · 박어머니</span>의 장남
+          <strong>서준</strong>
+        </p>
+        <p>
+          <span>이다정 · 최은혜</span>의 장녀
+          <strong>다미</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- 날짜 -->
+    <section class="section calendar-section">
+      <p class="section-kicker reveal">OCTOBER</p>
+      <h2 class="section-title reveal">2026. 10. 24</h2>
+
+      <div class="calendar reveal">
+        <div class="calendar__week">
+          <span class="sun">일</span><span>월</span><span>화</span>
+          <span>수</span><span>목</span><span>금</span><span>토</span>
+        </div>
+        <div class="calendar__days">
+          <span></span><span></span><span></span><span></span>
+          <span>1</span><span>2</span><span>3</span>
+          <span class="sun">4</span><span>5</span><span>6</span><span>7</span>
+          <span>8</span><span>9</span><span>10</span>
+          <span class="sun">11</span><span>12</span><span>13</span><span>14</span>
+          <span>15</span><span>16</span><span>17</span>
+          <span class="sun">18</span><span>19</span><span>20</span><span>21</span>
+          <span>22</span><span>23</span><span class="wedding-day">24</span>
+          <span class="sun">25</span><span>26</span><span>27</span><span>28</span>
+          <span>29</span><span>30</span><span>31</span>
+        </div>
+      </div>
+
+      <p class="calendar-section__time reveal">
+        토요일 오후 2시
+      </p>
+
+      <!-- 실제 구글 캘린더 주소로 교체 가능 -->
+      <a class="outline-button reveal" href="#" onclick="return false;">
+        일정 저장하기
+      </a>
+    </section>
+
+    <!-- 사진 갤러리 -->
+    <section class="section gallery-section">
+      <p class="section-kicker reveal">GALLERY</p>
+      <h2 class="section-title reveal">우리의 순간</h2>
+
+      <div class="gallery reveal">
+        <button type="button" data-full="./images/gallery-1.svg">
+          <img src="./images/gallery-1.svg" alt="갤러리 사진 1">
+        </button>
+        <button type="button" data-full="./images/gallery-2.svg">
+          <img src="./images/gallery-2.svg" alt="갤러리 사진 2">
+        </button>
+        <button type="button" data-full="./images/gallery-3.svg">
+          <img src="./images/gallery-3.svg" alt="갤러리 사진 3">
+        </button>
+        <button type="button" data-full="./images/gallery-4.svg">
+          <img src="./images/gallery-4.svg" alt="갤러리 사진 4">
+        </button>
+      </div>
+
+      <p class="gallery-section__hint reveal">
+        사진을 누르면 크게 볼 수 있어요.
+      </p>
+    </section>
+
+    <!-- 오시는 길 -->
+    <section class="section location-section">
+      <p class="section-kicker reveal">LOCATION</p>
+      <h2 class="section-title reveal">오시는 길</h2>
+
+      <div class="location-card reveal">
+        <h3>라온웨딩홀 3층 그랜드홀</h3>
+        <p id="venueAddress">서울특별시 행복구 사랑로 24</p>
+        <p class="location-card__tel">02-1234-5678</p>
+
+        <button
+          class="copy-address"
+          type="button"
+          data-copy-target="#venueAddress"
+        >
+          주소 복사
+        </button>
+      </div>
+
+      <div class="map-placeholder reveal" role="img" aria-label="약도 자리">
+        <span>MAP</span>
+        <p>이 영역을 카카오맵 또는 네이버 지도 이미지로 교체하세요.</p>
+      </div>
+
+      <div class="map-buttons reveal">
+        <!-- 실제 예식장 지도 주소로 href를 교체하세요 -->
+        <a href="https://map.kakao.com/" target="_blank" rel="noopener">카카오맵</a>
+        <a href="https://map.naver.com/" target="_blank" rel="noopener">네이버지도</a>
+      </div>
+
+      <div class="transport reveal">
+        <div>
+          <strong>지하철</strong>
+          <p>2호선 행복역 3번 출구 도보 5분</p>
+        </div>
+        <div>
+          <strong>버스</strong>
+          <p>행복웨딩홀 정류장 하차</p>
+        </div>
+        <div>
+          <strong>주차</strong>
+          <p>건물 지하 주차장 2시간 무료</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 계좌번호 -->
+    <section class="section account-section">
+      <p class="section-kicker reveal">FOR YOUR HEART</p>
+      <h2 class="section-title reveal">마음 전하실 곳</h2>
+      <p class="account-section__description reveal">
+        참석이 어려우신 분들을 위해<br>
+        계좌번호를 안내드립니다.
+      </p>
+
+      <div class="account-list reveal">
+        <article class="account-card">
+          <button class="account-card__toggle" type="button" aria-expanded="false">
+            <span>신랑측 계좌번호</span>
+            <span class="account-card__icon">＋</span>
+          </button>
+
+          <div class="account-card__content">
+            <div class="account-row">
+              <div>
+                <span>신랑 김서준</span>
+                <strong>국민은행 123456-01-123456</strong>
+              </div>
+              <button
+                type="button"
+                data-copy="국민은행 123456-01-123456"
+              >
+                복사
+              </button>
+            </div>
+
+            <div class="account-row">
+              <div>
+                <span>신랑 아버지 김아버지</span>
+                <strong>신한은행 110-123-456789</strong>
+              </div>
+              <button
+                type="button"
+                data-copy="신한은행 110-123-456789"
+              >
+                복사
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="account-card">
+          <button class="account-card__toggle" type="button" aria-expanded="false">
+            <span>신부측 계좌번호</span>
+            <span class="account-card__icon">＋</span>
+          </button>
+
+          <div class="account-card__content">
+            <div class="account-row">
+              <div>
+                <span>신부 이다미</span>
+                <strong>우리은행 1002-123-456789</strong>
+              </div>
+              <button
+                type="button"
+                data-copy="우리은행 1002-123-456789"
+              >
+                복사
+              </button>
+            </div>
+
+            <div class="account-row">
+              <div>
+                <span>신부 어머니 최은혜</span>
+                <strong>하나은행 123-456789-01234</strong>
+              </div>
+              <button
+                type="button"
+                data-copy="하나은행 123-456789-01234"
+              >
+                복사
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__flower" aria-hidden="true">❀</div>
+      <p>서준 그리고 다미</p>
+      <small>Thank you for celebrating with us.</small>
+    </footer>
+  </main>
+
+  <!-- 갤러리 확대 화면 -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" type="button" aria-label="사진 닫기">×</button>
+    <button class="lightbox__prev" type="button" aria-label="이전 사진">‹</button>
+    <img id="lightboxImage" src="" alt="확대된 갤러리 사진">
+    <button class="lightbox__next" type="button" aria-label="다음 사진">›</button>
+  </div>
+
+  <!-- 복사 완료 알림 -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    복사되었습니다.
+  </div>
+
+  <script src="./script.js"></script>
 </body>
-
 </html>
