@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+  <defs>
+    <filter id="blur"><feGaussianBlur stdDeviation="38"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" seed="8"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .08"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf7f0"/>
+      <stop offset="1" stop-color="#efe7dd"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#paper)"/>
+  <ellipse cx="288" cy="390" rx="360" ry="375"
+           fill="#e0b6b4" opacity=".62" filter="url(#blur)" transform="rotate(-14 288 390)"/>
+  <ellipse cx="876" cy="990" rx="408" ry="405"
+           fill="#a9bba1" opacity=".52" filter="url(#blur)" transform="rotate(18 876 990)"/>
+  <ellipse cx="888" cy="300" rx="216" ry="225"
+           fill="#ead7c9" opacity=".35" filter="url(#blur)"/>
+
+  <g opacity=".56" stroke="#71806b" stroke-width="5" fill="none">
+    <path d="M90 1320 C180 1080, 210 810, 300 600"/>
+    <path d="M190 1035 C135 945, 110 869, 96 765"/>
+    <path d="M222 900 C282 825, 312 720, 322 600"/>
+    <ellipse cx="112" cy="810" rx="33" ry="16" transform="rotate(37 112 810)" fill="#aab79d" stroke="none"/>
+    <ellipse cx="294" cy="690" rx="36" ry="17" transform="rotate(-34 294 690)" fill="#9eaf96" stroke="none"/>
+  </g>
+
+  <rect width="100%" height="100%" filter="url(#grain)" opacity=".8"/>
+  <g text-anchor="middle" fill="#57504a">
+    <text x="600.0" y="720.0" font-size="52" font-family="serif" letter-spacing="5">YOUR MAIN PHOTO</text>
+    <text x="600.0" y="810.0" font-size="24" font-family="serif" fill="#81766d">images/main-photo.svg 파일을 실제 사진으로 교체하세요</text>
+  </g>
+</svg>
