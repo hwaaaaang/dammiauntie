@@ -31,6 +31,7 @@
   function getWeddingDateTime() {
     return new Date(`${CONFIG.wedding.date}T${CONFIG.wedding.time}:00`);
   }
+bride
 
   /* ═══════════════════════════════════════════
      Image Auto-Detection
@@ -136,7 +137,7 @@
       return;
     }
 
-    namesEl.textContent = `${CONFIG.groom.name}  &  ${CONFIG.bride.name}`;
+    namesEl.textContent = `${CONFIG.baby.name}`;
 
     btn.addEventListener('click', () => {
       curtain.classList.add('is-open');
@@ -269,7 +270,7 @@
 
   function initHero() {
     $('#heroPhoto').src = 'images/hero/1.jpg';
-    $('#heroNames').textContent = `${CONFIG.groom.name}  ·  ${CONFIG.bride.name}`;
+    $('#heroNames').textContent = `${CONFIG.baby.name}`;
     $('#heroDate').textContent = formatDate(CONFIG.wedding.date, CONFIG.wedding.time);
     $('#heroVenue').textContent = CONFIG.wedding.venue;
   }
@@ -322,8 +323,8 @@
     $('#greetingTitle').textContent = CONFIG.greeting.title;
     $('#greetingContent').textContent = CONFIG.greeting.content;
 
-    const g = CONFIG.groom;
-    const b = CONFIG.bride;
+    const g = CONFIG.baby;
+    const b = CONFIG.baby;
 
     function parentLine(father, mother, fatherDeceased, motherDeceased) {
       const fd = fatherDeceased ? ' deceased' : '';
@@ -400,7 +401,7 @@
     const startDate = dt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
     const endDt = new Date(dt.getTime() + 2 * 60 * 60 * 1000);
     const endDate = endDt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(CONFIG.groom.name + ' ♥ ' + CONFIG.bride.name + ' 결혼식')}&dates=${startDate}/${endDate}&location=${encodeURIComponent(CONFIG.wedding.venue + ' ' + CONFIG.wedding.address)}&details=${encodeURIComponent('결혼식에 초대합니다.')}`;
+    const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(CONFIG.baby.name + ' ♥ ' + CONFIG.baby.name + ' 결혼식')}&dates=${startDate}/${endDate}&location=${encodeURIComponent(CONFIG.wedding.venue + ' ' + CONFIG.wedding.address)}&details=${encodeURIComponent('결혼식에 초대합니다.')}`;
     $('#googleCalBtn').href = gcalUrl;
 
     // ICS download (Apple Calendar)
@@ -412,7 +413,7 @@
         'BEGIN:VEVENT',
         `DTSTART:${startDate}`,
         `DTEND:${endDate}`,
-        `SUMMARY:${CONFIG.groom.name} ♥ ${CONFIG.bride.name} 결혼식`,
+        `SUMMARY:${CONFIG.baby.name} ♥ ${CONFIG.baby.name} 돌잔치`,
         `LOCATION:${CONFIG.wedding.venue} ${CONFIG.wedding.address}`,
         'DESCRIPTION:돌잔치에 초대합니다.',
         'END:VEVENT',
@@ -631,8 +632,8 @@
   }
 
   function initAccounts() {
-    renderAccounts(CONFIG.accounts.groom, 'groomAccountList');
-    renderAccounts(CONFIG.accounts.bride, 'brideAccountList');
+    renderAccounts(CONFIG.accounts.baby, 'groomAccountList');
+    renderAccounts(CONFIG.accounts.baby, 'brideAccountList');
 
     initAccordion('groomAccordion', 'groomAccordionPanel');
     initAccordion('brideAccordion', 'brideAccordionPanel');
@@ -655,7 +656,7 @@
     const year = dt.getFullYear();
     const month = String(dt.getMonth() + 1).padStart(2, '0');
     const day = String(dt.getDate()).padStart(2, '0');
-    $('#footerText').textContent = `${CONFIG.groom.name} & ${CONFIG.bride.name} — ${year}.${month}.${day}`;
+    $('#footerText').textContent = `${CONFIG.baby.name} & ${CONFIG.baby.name} — ${year}.${month}.${day}`;
   }
 
   /* ═══════════════════════════════════════════
