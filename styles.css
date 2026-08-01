@@ -4,7 +4,7 @@
    ═══════════════════════════════════════════ */
 
 /* ─── CSS Variables ─── */
-:root {
+/* :root {
   --color-bg: #fdfbf8;
   --color-bg-alt: #f8f4f0;
   --color-bg-card: #ffffff;
@@ -25,6 +25,65 @@
   --color-naver: #03c75a;
   --color-white: #ffffff;
   --color-toast-bg: rgba(74, 74, 74, 0.88);
+
+  --font-serif: 'Nanum Myeongjo', 'Georgia', serif;
+  --font-display: 'Cormorant Garamond', 'Nanum Myeongjo', serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+  --spacing-2xl: 6rem;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --transition: 0.3s ease;
+  --transition-slow: 0.6s ease;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+ */
+/* ─── CSS Variables (아이보리 & 베이지 & 블랙 톤) ─── */
+:root {
+  /* 배경 색상 */
+  --color-bg: #fdfbf7;          /* 메인 배경: 따뜻하고 밝은 아이보리 */
+  --color-bg-alt: #f5f0eb;      /* 보조 배경(달력/갤러리 등): 소프트 톤다운 베이지 */
+  --color-bg-card: #ffffff;     /* 카드/달력 내부 배경: 깔끔한 화이트 */
+
+  /* 텍스트 색상 */
+  --color-text: #1a1a1a;        /* 기본 본문/이름: 신뢰감 주는 진한 블랙/다크그레이 */
+  --color-text-light: #4a4a4a;  /* 보조 텍스트: 차분한 중성 그레이 */
+  --color-text-muted: #8c857b;  /* 연한 텍스트/요일: 웜 샌드 그레이 */
+
+  /* 포인트 및 서브 색상 (베이지 계열) */
+  --color-lavender: #e8e2d8;    /* 상단 커튼/물감 효과: 연한 샌드 베이지 */
+  --color-blush: #f0eae1;       /* 물감 효과: 워시드 베이지 */
+  --color-sky: #e2dcd2;         /* 물감 효과: 딥 샌드 */
+  --color-mint: #eee9e0;        /* 물감 효과: Soft 베이지 */
+
+  /* 아센트(강조) 색상 */
+  --color-accent: #c2b5a3;       /* 테두리/라인/버튼 포인트: 모던 웜 베이지 */
+  --color-accent-light: #dcd4c8; /* 모달/버튼 라이트 베이지 */
+  --color-accent-dark: #2b2825;  /* 소제목/네비게이션: 차분한 딥 브라운 블랙 */
+
+  /* 테두리 및 디바이더 */
+  --color-border: #e6dfd5;
+  --color-divider: #d8cebe;
+  --color-overlay: rgba(26, 26, 26, 0.4);
+
+  /* 외부 버튼 & 토스트 */
+  --color-kakao: #fee500;
+  --color-naver: #03c75a;
+  --color-white: #ffffff;
+  --color-toast-bg: rgba(26, 26, 26, 0.88);
 
   --font-serif: 'Nanum Myeongjo', 'Georgia', serif;
   --font-display: 'Cormorant Garamond', 'Nanum Myeongjo', serif;
