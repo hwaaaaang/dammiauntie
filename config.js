@@ -17,68 +17,56 @@ const CONFIG = {
     useCurtain: true,  // 초대장 열기 화면 사용 여부 (true: 사용, false: 바로 본문 표시)
 
     // ── 2. 메인 (히어로) ──
-    groom: {
-        name: "신랑",
-        nameEn: "Groom",
-        father: "아버지",
-        mother: "어머니",
-        fatherDeceased: false,
-        motherDeceased: false
-    },
 
-    bride: {
-        name: "신부",
-        nameEn: "Bride",
-        father: "아버지",
-        mother: "어머니",
+    baby: {
+        name: "강이담",
+        nameEn: "Baby",
+        father: "강석주",
+        mother: "김민경",
         fatherDeceased: false,
         motherDeceased: false
     },
 
     wedding: {
-        date: "2026-05-09",
-        time: "13:00",
-        venue: "예식장 이름",
-        hall: "그랜드홀 5층",
-        address: "서울특별시 강남구 테헤란로 123",
-        tel: "02-1234-5678"
+        date: "2026-08-15",
+        time: "12:30",
+        venue: "모임 장소",
+        hall: "다이닝원 천호점",
+        address: "서울특별시 강동구 천호대로 1024 지하 2층",
+        tel: "0507-1376-5985"
     },
 
     // ── 3. 인사말 ──
     greeting: {
         title: "소중한 분들을 초대합니다",
-        content: "서로 다른 길을 걸어온 두 사람이\n이제 같은 길을 함께 걸어가려 합니다.\n\n저희의 새로운 시작을\n축복해 주시면 감사하겠습니다."
+        content: "이담이의 첫 생일을\n함께 축복해 주시면 감사하겠습니다."
     },
 
     // ── 4. 우리의 이야기 ──
     story: {
-        title: "우리의 이야기",
-        content: "서로 다른 길을 걷던 두 사람이\n하나의 길을 함께 걷게 되었습니다.\n\n여러분을 소중한 자리에 초대합니다."
+        title: "이담이의 이야기",
+        content: "석주와 민경이의 첫 아기\n이담이가 벌써 한 살이 되었습니다.\n\n여러분을 소중한 자리에 초대합니다."
     },
 
     // ── 5. 오시는 길 ──
     mapLinks: {
-        kakao: "https://map.kakao.com/",
-        naver: "https://map.naver.com/"
+        kakao: "https://place.map.kakao.com/1926754206",
+        naver: "https://naver.me/5iTKaPg1"
     },
 
     // ── 6. 마음 전하실 곳 ──
     accounts: {
         groom: [
-            { role: "신랑", name: "홍길동", bank: "국민은행", number: "000-000-000000" },
-            { role: "아버지", name: "홍판서", bank: "신한은행", number: "000-000-000000" },
-            { role: "어머니", name: "김부인", bank: "우리은행", number: "000-000-000000" }
+            { role: "이모", name: "황희정", bank: "카카오뱅크", number: "3333-2093-88631" }
         ],
         bride: [
-            { role: "신부", name: "김영희", bank: "하나은행", number: "000-000-000000" },
-            { role: "아버지", name: "김사장", bank: "기업은행", number: "000-000-000000" },
-            { role: "어머니", name: "이부인", bank: "농협은행", number: "000-000-000000" }
+            { role: "이모", name: "황희정", bank: "우리은행", number: "1002-8625-531817" }
         ]
     },
 
     // ── 링크 공유 시 나타나는 문구 ──
     meta: {
-        title: "신랑 ♥ 신부 결혼합니다",
-        description: "2026년 5월 9일, 소중한 분들을 초대합니다."
+        title: "강이담의 첫 생일잔치에 초대합니다",
+        description: "2026년 8월 15일, 첫 생일을 함께 축하해주세료."
     }
 };
