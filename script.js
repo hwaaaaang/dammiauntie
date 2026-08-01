@@ -414,7 +414,7 @@
         `DTEND:${endDate}`,
         `SUMMARY:${CONFIG.groom.name} ♥ ${CONFIG.bride.name} 결혼식`,
         `LOCATION:${CONFIG.wedding.venue} ${CONFIG.wedding.address}`,
-        'DESCRIPTION:결혼식에 초대합니다.',
+        'DESCRIPTION:돌잔치에 초대합니다.',
         'END:VEVENT',
         'END:VCALENDAR'
       ].join('\r\n');
