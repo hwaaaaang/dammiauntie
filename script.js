@@ -379,7 +379,7 @@
     document.body.classList.remove('no-scroll');
   }
 
-  function downloadModalImage() {
+  function downloadModalImage(e) {
     if (e && e.preventDefault) e.preventDefault();
     const currentSrc = modalImages[modalIndex];
     if (!currentSrc) return;
