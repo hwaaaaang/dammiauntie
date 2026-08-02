@@ -1538,7 +1538,7 @@ a {
   position: absolute;
   top: 15px;
   right: 60px;
-  background: rgba(0, 0, 0, 0.4);
+  background: none;
   border: none;
   color: #ffffff;
   width: 40px;
@@ -1549,9 +1549,11 @@ a {
   justify-content: center;
   cursor: pointer;
   z-index: 1010;
-  transition: background 0.2s ease;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
-.photo-modal__download:hover {
-  background: rgba(0, 0, 0, 0.7);
+.photo-modal__download:hover, .photo-modal__download:active {
+  background: none;
+  opacity: 1;
 }
