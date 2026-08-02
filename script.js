@@ -372,11 +372,26 @@
     document.body.classList.add('no-scroll');
   }
 
-  function closePhotoModal() {
+  function closePhotoModal(e) {
     if (e && e.preventDefault) e.preventDefault();
     const modal = $('#photoModal');
     if (modal) modal.classList.remove('is-open');
     document.body.classList.remove('no-scroll');
+  }
+
+  function downloadModalImage() {
+    const currentSrc = modalImages[modalIndex];
+    if (!currentSrc) return;
+
+    const a = document.createElement('a');
+    a.href = currentSrc;
+
+    const fileName = currentSrc.split('/').pop() || 'photo.jpg';
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    showToast('사진을 다운로드합니다');
   }
 
   function showModalImage() {
@@ -421,21 +436,6 @@
           closePhotoModal();
         }
       });
-    }
-
-    function downloadModalImage() {
-      const currentSrc = modalImages[modalIndex];
-      if (!currentSrc) return;
-
-      const a = document.createElement('a');
-      a.href = currentSrc;
-      
-      const fileName = currentSrc.split('/').pop() || 'photo.jpg';
-      a.download = fileName;
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      showToast('사진을 다운로드합니다');
     }
 
     document.addEventListener('keydown', (e) => {
