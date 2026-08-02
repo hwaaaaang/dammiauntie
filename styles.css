@@ -1535,3 +1535,25 @@ a {
   line-height: 1.6;
   font-family: inherit;
 }
+
+.photo-modal__download {
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1010;
+  transition: background 0.2s ease;
+}
+
+.photo-modal__download:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
