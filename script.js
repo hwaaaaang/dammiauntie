@@ -379,29 +379,6 @@
     document.body.classList.remove('no-scroll');
   }
 
-  function downloadModalImage(e) {
-    if (e && e.preventDefault) e.preventDefault();
-    const currentSrc = modalImages[modalIndex];
-    if (!currentSrc) return;
-
-    const userAgent = navigator.userAgent.toLowerCase();
-
-    if (userAgent.includes('kakaotalk')) {
-      showToast('이미지를 길게(꾹) 눌러 저장해 주세요');
-      window.open(currentSrc, '_blank');
-      return;
-    }
-
-    const a = document.createElement('a');
-    a.href = currentSrc;
-    const fileName = currentSrc.split('/').pop() || 'photo.jpg';
-    a.download = fileName;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    showToast('사진을 다운로드합니다');
-  }
-
   function showModalImage() {
     const img = $('#modalImg');
     if (img) img.src = modalImages[modalIndex];
@@ -427,9 +404,6 @@
   function initPhotoModal() {
     const closeBtn = $('#modalClose');
     if (closeBtn) closeBtn.addEventListener('click', (e) => closePhotoModal(e));
-
-    const downloadBtn = $('#modalDownload');
-    if (downloadBtn) downloadBtn.addEventListener('click', downloadModalImage);
 
     const prevBtn = $('#modalPrev');
     if (prevBtn) prevBtn.addEventListener('click', () => modalNavigate(-1));

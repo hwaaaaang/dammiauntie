@@ -1534,26 +1534,12 @@ a {
   font-family: inherit;
 }
 
-.photo-modal__download {
-  position: absolute;
-  top: 15px;
-  right: 60px;
-  background: none;
-  border: none;
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1010;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.photo-modal__download:hover, .photo-modal__download:active {
-  background: none;
-  opacity: 1;
+.gallery__subtitle {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: -0.2px;
 }
