@@ -52,7 +52,8 @@
 <!-- ═══ Main Content ═══ -->
 <main id="mainContent" class="main-content">
 
-  <!-- ─── Hero Section ─── -->
+
+  <!-- ─── 1. Hero Section ─── -->
   <section class="section hero" id="hero">
     <div class="hero__overlay"></div>
     <img class="hero__photo" id="heroPhoto" src="" alt="이담이 사진" loading="eager">
@@ -91,7 +92,7 @@
     </div>
   </section>
 
-  <!-- ─── Greeting Section ─── -->
+  <!-- ─── 2. Greeting Section ─── -->
   <section class="section greeting" id="greeting">
     <div class="wc-blob wc-blob--greeting"></div>
     <div class="section__inner">
@@ -103,7 +104,7 @@
     <div class="wc-divider"></div>
   </section>
 
-  <!-- ─── Calendar Section ─── -->
+  <!-- ─── 3. Calendar Section ─── -->
   <section class="section calendar-section" id="calendarSection">
     <div class="wc-blob wc-blob--calendar"></div>
     <div class="section__inner">
@@ -123,34 +124,12 @@
     <div class="wc-divider"></div>
   </section>
 
-  <!-- ─── Our Story Section ─── -->
-  <section class="section story" id="story">
-    <div class="wc-blob wc-blob--story"></div>
-    <div class="section__inner">
-      <h2 class="section__title animate-item" data-animate="fade-up" id="storyTitle"></h2>
-      <p class="story__text animate-item" data-animate="fade-up" id="storyContent"></p>
-      <div class="story__photos" id="storyPhotos"></div>
-    </div>
-    <div class="wc-divider"></div>
-  </section>
-
-  <!-- ─── Gallery Section ─── -->
-  <section class="section gallery" id="gallery">
-    <div class="wc-blob wc-blob--gallery"></div>
-    <div class="section__inner">
-      <h2 class="section__title animate-item" data-animate="fade-up">갤러리</h2>
-      <div class="gallery__grid" id="galleryGrid"></div>
-    </div>
-    <div class="wc-divider"></div>
-  </section>
-
-  <!-- ─── Location Section ─── -->
+  <!-- ─── 4. Location Section ─── -->
   <section class="section location" id="location">
     <div class="wc-blob wc-blob--location"></div>
     <div class="section__inner">
       <h2 class="section__title animate-item" data-animate="fade-up">오시는 길</h2>
       <div class="location__info animate-item" data-animate="fade-up">
-        <p class="location__venue" id="locationVenue"></p>
         <p class="location__hall" id="locationHall"></p>
         <p class="location__address" id="locationAddress"></p>
         <p class="location__tel" id="locationTel"></p>
@@ -159,9 +138,15 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
         주소 복사
       </button>
-      <div class="location__map animate-item" data-animate="scale-in">
-        <img class="location__map-img" id="locationMapImg" src="" alt="약도" loading="lazy">
-      </div>
+      <iframe
+              src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca50060a2f2fd%3A0x88e6b224dace3075!2z64uk7J2064ud7JuQIOyynO2YuOygkA!5e0!3m2!1sko!2skr!4v1785686617128!5m2!1sko!2skr"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
       <div class="location__links animate-item" data-animate="fade-up">
         <a class="btn btn--kakao" id="kakaoMapBtn" href="#" target="_blank" rel="noopener">카카오맵</a>
         <a class="btn btn--naver" id="naverMapBtn" href="#" target="_blank" rel="noopener">네이버지도</a>
@@ -170,37 +155,14 @@
     <div class="wc-divider"></div>
   </section>
 
-  <!-- ─── Account Section (축의금) ─── -->
-  <section class="section account" id="account">
-    <div class="wc-blob wc-blob--account"></div>
+  <!-- ─── 5. Gallery Section ─── -->
+  <section class="section gallery" id="gallery">
+    <div class="wc-blob wc-blob--gallery"></div>
     <div class="section__inner">
-      <h2 class="section__title animate-item" data-animate="fade-up">마음 전하실 곳</h2>
-      <p class="account__desc animate-item" data-animate="fade-up">축하의 마음을 담아 야르머니를 전달해 보세요.</p>
-
-      <!-- Groom Accounts -->
-      <div class="accordion animate-item" data-animate="fade-up">
-        <button class="accordion__trigger" id="groomAccordion" aria-expanded="false">
-          <span class="accordion__icon">&#10047;</span>
-          <span>이모측 계좌번호</span>
-          <svg class="accordion__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="accordion__panel" id="groomAccordionPanel">
-          <div class="accordion__panel-inner" id="groomAccountList"></div>
-        </div>
-      </div>
-
-      <!-- Bride Accounts -->
-      <div class="accordion animate-item" data-animate="fade-up">
-        <button class="accordion__trigger" id="brideAccordion" aria-expanded="false">
-          <span class="accordion__icon">&#10047;</span>
-          <span>이모측 계좌번호 2</span>
-          <svg class="accordion__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="accordion__panel" id="brideAccordionPanel">
-          <div class="accordion__panel-inner" id="brideAccountList"></div>
-        </div>
-      </div>
+      <h2 class="section__title animate-item" data-animate="fade-up">갤러리</h2>
+      <div class="gallery__grid" id="galleryGrid"></div>
     </div>
+    <div class="wc-divider"></div>
   </section>
 
   <!-- ─── Footer ─── -->

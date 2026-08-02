@@ -13,7 +13,6 @@ const CONFIG = {
     wedding: {
         date: "2026-08-15",
         time: "12:30",
-        venue: "모임 장소",
         hall: "다이닝원 천호점",
         address: "서울특별시 강동구 천호대로 1024 지하 2층",
         tel: "0507-1376-5985"

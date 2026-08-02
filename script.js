@@ -321,32 +321,6 @@
   }
 
   /* ═══════════════════════════════════════════
-     Story Section
-     ═══════════════════════════════════════════ */
-
-  function initStory(storyImages) {
-    if ($('#storyTitle')) $('#storyTitle').textContent = CONFIG.story.title;
-    if ($('#storyContent')) $('#storyContent').textContent = CONFIG.story.content;
-
-    const container = $('#storyPhotos');
-    if (!container) return;
-
-    const placeholder = container.querySelector('.loading-placeholder');
-    if (placeholder) placeholder.remove();
-
-    if (storyImages.length === 0) return;
-
-    storyImages.forEach((src, i) => {
-      const div = document.createElement('div');
-      div.className = 'story__photo-item animate-item';
-      div.setAttribute('data-animate', 'fade-up');
-      div.innerHTML = `<img src="${src}" alt="스토리 사진 ${i + 1}" loading="lazy">`;
-      div.addEventListener('click', () => openPhotoModal(storyImages, i));
-      container.appendChild(div);
-    });
-  }
-
-  /* ═══════════════════════════════════════════
      Gallery Section
      ═══════════════════════════════════════════ */
 
@@ -484,7 +458,6 @@
     const w = CONFIG.wedding;
     const ml = CONFIG.mapLinks;
 
-    if ($('#locationVenue')) $('#locationVenue').textContent = w.venue;
     if ($('#locationHall')) $('#locationHall').textContent = w.hall;
     if ($('#locationAddress')) $('#locationAddress').textContent = w.address;
     if ($('#locationTel')) $('#locationTel').textContent = w.tel ? `Tel. ${w.tel}` : '';
@@ -584,12 +557,10 @@
      ═══════════════════════════════════════════ */
 
   function showLoadingPlaceholders() {
-    const storyPhotos = $('#storyPhotos');
     const galleryGrid = $('#galleryGrid');
 
     const placeholderHTML = '<div class="loading-placeholder"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div>';
 
-    if (storyPhotos) storyPhotos.innerHTML = placeholderHTML;
     if (galleryGrid) galleryGrid.innerHTML = placeholderHTML;
   }
 
@@ -655,10 +626,8 @@
     if ($('#storyTitle')) $('#storyTitle').textContent = CONFIG.story.title;
     if ($('#storyContent')) $('#storyContent').textContent = CONFIG.story.content;
 
-    const [storyImages, galleryImages] = await Promise.all([
-      loadImagesFromFolder('story'),
-      loadImagesFromFolder('gallery')
-    ]);
+    const galleryImages = await loadImagesFromFolder('gallery');
+    initGallery(galleryImages);
 
     initStory(storyImages);
     initGallery(galleryImages);
