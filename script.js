@@ -165,7 +165,7 @@
     if (date) date.textContent = formatDate(CONFIG.wedding.date, CONFIG.wedding.time);
 
     const venue = $('#heroVenue');
-    if (venue) venue.textContent = `${CONFIG.wedding.venue} ${CONFIG.wedding.hall}`;
+    if (venue) venue.textContent = CONFIG.wedding.hall;
   }
 
   /* ═══════════════════════════════════════════
@@ -224,7 +224,7 @@
         아빠 <span class="child-name">${b.father}</span> · 엄마 <span class="child-name">${b.mother}</span>
       </div>
       <div class="parent-row" style="margin-top: 4px;">
-        의 아기 <span class="child-name">${b.name}</span>
+        의 아들 <span class="child-name">${b.name}</span>
       </div>
     `;
 
@@ -623,14 +623,9 @@
     initFooter();
     initScrollAnimations();
 
-    if ($('#storyTitle')) $('#storyTitle').textContent = CONFIG.story.title;
-    if ($('#storyContent')) $('#storyContent').textContent = CONFIG.story.content;
-
     const galleryImages = await loadImagesFromFolder('gallery');
     initGallery(galleryImages);
 
-    initStory(storyImages);
-    initGallery(galleryImages);
   }
 
   if (document.readyState === 'loading') {
