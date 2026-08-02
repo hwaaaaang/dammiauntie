@@ -387,18 +387,9 @@
     const userAgent = navigator.userAgent.toLowerCase();
 
     if (userAgent.includes('kakaotalk')) {
-      showToast('외부 브라우저로 이동하여 다운로드를 진행합니다');
-
-      const absoluteUrl = new URL(currentSrc, window.location.href).href;
-      if (/iphone|ipad|ipod/i.test(userAgent)) {
-        window.location.href = 'x-web-search://?' + absoluteUrl;
-        return;
-      }
-      else if (/android/i.test(userAgent)) {
-        const intentUrl = 'intent://' + absoluteUrl.replace(/https?:\/\//, '') + '#Intent;scheme=https;package=com.android.chrome;end';
-        window.location.href = intentUrl;
-        return;
-      }
+      showToast('이미지를 길게(꾹) 눌러 저장해 주세요');
+      window.open(currentSrc, '_blank');
+      return;
     }
 
     const a = document.createElement('a');
