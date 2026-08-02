@@ -373,6 +373,7 @@
   }
 
   function closePhotoModal() {
+    if (e && e.preventDefault) e.preventDefault();
     const modal = $('#photoModal');
     if (modal) modal.classList.remove('is-open');
     document.body.classList.remove('no-scroll');
@@ -402,7 +403,7 @@
 
   function initPhotoModal() {
     const closeBtn = $('#modalClose');
-    if (closeBtn) closeBtn.addEventListener('click', closePhotoModal);
+    if (closeBtn) closeBtn.addEventListener('click', (e) => closePhotoModal(e));
 
     const prevBtn = $('#modalPrev');
     if (prevBtn) prevBtn.addEventListener('click', () => modalNavigate(-1));
