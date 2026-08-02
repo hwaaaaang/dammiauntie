@@ -1,6 +1,6 @@
 const CONFIG = {
     // ── 1. 초대장 열기 ──
-    useCurtain: true,  // 초대장 열기 화면 사용 여부 (true: 사용, false: 바로 본문 표시)
+    useCurtain: false,  // 초대장 열기 화면 사용 여부 (true: 사용, false: 바로 본문 표시)
 
     // ── 2. 메인 (히어로) ──
 
