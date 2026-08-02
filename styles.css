@@ -1462,3 +1462,12 @@ a {
     display: none !important;
   }
 }
+
+.date-subtitle {
+  font-size: 0.95rem;
+  color: #666666;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 300;
+}

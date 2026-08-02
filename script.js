@@ -244,6 +244,11 @@
     const grid = $('#calendarGrid');
     if (!grid) return;
 
+    const subDateEl = $('#calendarSubDate');
+    if (subDateEl) {
+      subDateEl.textContent = formatDate(CONFIG.wedding.date, CONFIG.wedding.time);
+    }
+
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
       'July', 'August', 'September', 'October', 'November', 'December'];
     grid.innerHTML = `<div class="calendar__header">${monthNames[month]} ${year}</div>`;
