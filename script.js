@@ -221,9 +221,9 @@
 
     const parentsHTML = `
       <div class="parent-row">
-        아빠 <span class="child-name">${b.father}</span> · 엄마 <span class="child-name">${b.mother}</span>
+        아빠 <span class="parents-name">${b.father}</span> · 엄마 <span class="parents-name">${b.mother}</span>
       </div>
-      <div class="parent-row" style="margin-top: 4px;">
+      <div class="child-row" style="margin-top: 4px;">
         아기 <span class="child-name">${b.name}</span>
       </div>
     `;

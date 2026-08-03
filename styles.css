@@ -822,12 +822,25 @@ a {
   gap: 0.5rem;
 }
 
+.greeting__parents .child-row {
+  font-size: 1.025rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 .greeting__parents .parent-dot {
   color: var(--color-accent);
   font-size: 0.5rem;
 }
 
+.greeting__parents .parents-name {
+  font-weight: 700;
+}
+
 .greeting__parents .child-name {
+  font-size: 1.025rem;
   font-weight: 700;
 }
 
@@ -980,14 +993,14 @@ a {
 }
 
 .location__hall {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 400;
   color: var(--color-text-light);
   margin-bottom: var(--spacing-xs);
 }
 
 .location__address {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: var(--color-text-muted);
   line-height: 1.6;
