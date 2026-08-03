@@ -224,7 +224,7 @@
         아빠 <span class="child-name">${b.father}</span> · 엄마 <span class="child-name">${b.mother}</span>
       </div>
       <div class="parent-row" style="margin-top: 4px;">
-        의 아들 <span class="child-name">${b.name}</span>
+        아기 <span class="child-name">${b.name}</span>
       </div>
     `;
 
