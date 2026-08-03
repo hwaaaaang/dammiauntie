@@ -680,7 +680,7 @@ a {
   z-index: 2;
   text-align: center;
   color: var(--color-text);
-  padding: 0 var(--spacing-md) var(--spacing-lg);
+  padding: 0 var(--spacing-md) 0.5rem;
   width: 100%;
 }
 
@@ -692,7 +692,7 @@ a {
   text-transform: uppercase;
   margin-bottom: var(--spacing-sm);
   opacity: 0.6;
-  color: var(--color-accent-light);
+  color: var(--color-accent-dark);
 }
 
 .hero__names {
@@ -702,7 +702,7 @@ a {
   letter-spacing: 8px;
   margin-bottom: var(--spacing-md);
   line-height: 1.4;
-  color: var(--color-text-light);
+  color: var(--color-text);
 }
 
 .hero__divider {
@@ -737,7 +737,7 @@ a {
 .countdown {
   position: relative;
   z-index: 2;
-  padding: var(--spacing-lg) var(--spacing-md) calc(var(--spacing-lg) + var(--safe-bottom));
+  padding: 0.5rem var(--spacing-md) calc(var(--spacing-lg) + var(--safe-bottom));
   text-align: center;
   color: var(--color-text);
 }
