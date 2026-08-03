@@ -290,7 +290,7 @@
     const startDate = dt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
     const endDt = new Date(dt.getTime() + 2 * 60 * 60 * 1000);
     const endDate = endDt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(CONFIG.baby.name + ' 돌잔치')}&dates=${startDate}/${endDate}&location=${encodeURIComponent(CONFIG.wedding.venue + ' ' + CONFIG.wedding.hall + ' ' + CONFIG.wedding.address)}&details=${encodeURIComponent('첫 돌잔치에 초대합니다.')}`;
+    const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(CONFIG.baby.name + ' 돌잔치')}&dates=${startDate}/${endDate}&location=${encodeURIComponent(CONFIG.wedding.hall + ' ' + CONFIG.wedding.address)}&details=${encodeURIComponent('첫 돌잔치에 초대합니다.')}`;
 
     const gcalBtn = $('#googleCalBtn');
     if (gcalBtn) gcalBtn.href = gcalUrl;
@@ -307,7 +307,7 @@
           `DTSTART:${startDate}`,
           `DTEND:${endDate}`,
           `SUMMARY:${CONFIG.baby.name} 돌잔치`,
-          `LOCATION:${CONFIG.wedding.venue} ${CONFIG.wedding.hall} ${CONFIG.wedding.address}`,
+          `LOCATION:${CONFIG.wedding.hall} ${CONFIG.wedding.address}`,
           'DESCRIPTION:첫 돌잔치에 초대합니다.',
           'END:VEVENT',
           'END:VCALENDAR'
