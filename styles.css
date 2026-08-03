@@ -823,7 +823,7 @@ a {
 }
 
 .greeting__parents .child-row {
-  font-size: 1.025rem;
+  font-size: 1.0rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -840,7 +840,7 @@ a {
 }
 
 .greeting__parents .child-name {
-  font-size: 1.025rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
