@@ -630,7 +630,7 @@ a {
 .section__title {
   font-family: var(--font-serif);
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 3px;
   margin-bottom: var(--spacing-lg);
   color: var(--color-text);
@@ -687,7 +687,7 @@ a {
 .hero__label {
   font-family: var(--font-display);
   font-size: 1.0rem;
-  font-weight: 300;
+  font-weight: 350;
   letter-spacing: 6px;
   text-transform: uppercase;
   margin-bottom: var(--spacing-sm);
@@ -722,7 +722,7 @@ a {
 .hero__date,
 .hero__venue {
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 450;
   letter-spacing: 2px;
   opacity: 0.75;
   line-height: 1.6;
@@ -836,12 +836,12 @@ a {
 }
 
 .greeting__parents .parents-name {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .greeting__parents .child-name {
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .greeting__parents .deceased::before {
@@ -926,9 +926,9 @@ a {
 }
 
 .calendar__day.is-today {
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   background: linear-gradient(135deg, var(--color-lavender), var(--color-accent));
   border-radius: 50%;
 }
@@ -987,21 +987,21 @@ a {
 
 .location__venue {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0.25rem;
   letter-spacing: 1px;
 }
 
 .location__hall {
-  font-size: 0.95rem;
-  font-weight: 400;
+  font-size: 1.0rem;
+  font-weight: 600;
   color: var(--color-text-light);
   margin-bottom: var(--spacing-xs);
 }
 
 .location__address {
-  font-size: 0.875rem;
-  font-weight: 400;
+  font-size: 1.0rem;
+  font-weight: 500;
   color: var(--color-text-muted);
   line-height: 1.6;
 }
@@ -1083,7 +1083,7 @@ a {
   background: var(--color-kakao);
   color: #3a1d1d;
   padding: 0.75rem 1.75rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .btn--kakao:hover {
@@ -1094,7 +1094,7 @@ a {
   background: var(--color-naver);
   color: var(--color-white);
   padding: 0.75rem 1.75rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .btn--naver:hover {
@@ -1338,7 +1338,7 @@ a {
 }
 
 .transport-title {
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   font-weight: 400;
   color: var(--color-text-light);
   margin-bottom: 20px;
