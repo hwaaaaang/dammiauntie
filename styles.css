@@ -85,9 +85,9 @@
   --color-white: #ffffff;
   --color-toast-bg: rgba(26, 26, 26, 0.88);
 
-  --font-sans: "Gowun Dodum", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
-  --font-serif: 'Nanum Myeongjo', 'Georgia', serif;
-  --font-display: 'Cormorant Garamond', 'Nanum Myeongjo', serif;
+  --font-sans: "Gowun Dodum", "Pretendard", -apple-system, sans-serif;
+  --font-serif: "Gowun Dodum", 'Nanum Myeongjo', serif;
+  --font-display: "Gowun Dodum", 'Cormorant Garamond', serif;
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -126,7 +126,7 @@ html {
 }
 
 body {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
   line-height: 1.8;
