@@ -629,7 +629,7 @@ a {
 
 .section__title {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 3px;
   margin-bottom: var(--spacing-lg);
@@ -799,7 +799,7 @@ a {
 }
 
 .greeting__text {
-  font-size: 0.9375rem;
+  font-size: 0.95rem;
   font-weight: 400;
   line-height: 2;
   color: var(--color-text-light);
@@ -808,7 +808,7 @@ a {
 }
 
 .greeting__parents {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 2.2;
   color: var(--color-text);
@@ -824,7 +824,7 @@ a {
 
 .greeting__parents .parent-dot {
   color: var(--color-accent);
-  font-size: 0.4rem;
+  font-size: 0.5rem;
 }
 
 .greeting__parents .child-name {
@@ -855,7 +855,7 @@ a {
 
 .calendar__header {
   font-family: var(--font-display);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 2px;
   margin-bottom: var(--spacing-sm);
@@ -870,7 +870,7 @@ a {
 }
 
 .calendar__weekday {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 400;
   color: var(--color-text-muted);
   text-align: center;
@@ -894,7 +894,7 @@ a {
 .calendar__day {
   text-align: center;
   padding: 0.5rem 0;
-  font-size: 0.8125rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: var(--color-text-light);
   position: relative;
@@ -913,6 +913,7 @@ a {
 }
 
 .calendar__day.is-today {
+  font-size: 1.0rem;
   font-weight: 700;
   color: #fff;
   background: linear-gradient(135deg, var(--color-lavender), var(--color-accent));
@@ -972,28 +973,28 @@ a {
 }
 
 .location__venue {
-  font-size: 1.0625rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
   letter-spacing: 1px;
 }
 
 .location__hall {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: var(--color-text-light);
   margin-bottom: var(--spacing-xs);
 }
 
 .location__address {
-  font-size: 0.8125rem;
+  font-size: 0.85rem;
   font-weight: 400;
   color: var(--color-text-muted);
   line-height: 1.6;
 }
 
 .location__tel {
-  font-size: 0.8125rem;
+  font-size: 0.85rem;
   font-weight: 400;
   color: var(--color-text-muted);
   margin-top: 0.25rem;
@@ -1118,7 +1119,7 @@ a {
 }
 
 .footer__text {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 400;
   color: var(--color-text-muted);
   letter-spacing: 2px;
@@ -1239,7 +1240,7 @@ a {
   }
 
   .section__title {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 
   .wc-divider {
@@ -1299,13 +1300,15 @@ a {
 }
 
 .date-subtitle {
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   color: #666666;
   margin-top: -10px;
   margin-bottom: 25px;
   text-align: center;
   font-weight: 300;
 }
+
+/* "교통수단 " */
 
 .transport-card {
   background-color: #ffffff;
@@ -1322,7 +1325,7 @@ a {
 }
 
 .transport-title {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: var(--color-text-light);
   margin-bottom: 20px;
@@ -1354,7 +1357,7 @@ a {
 }
 
 .transport-main {
-  font-size: 0.8125rem;
+  font-size: 0.85rem;
   font-weight: 400;
   color: var(--color-text-muted);
   text-decoration: none;
@@ -1365,7 +1368,7 @@ a {
 }
 
 .transport-sub {
-  font-size: 0.8125rem;
+  font-size: 0.85rem;
   color: var(--color-text-muted);
   line-height: 1.6;
   font-family: inherit;
