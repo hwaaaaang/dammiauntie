@@ -85,6 +85,7 @@
   --color-white: #ffffff;
   --color-toast-bg: rgba(26, 26, 26, 0.88);
 
+  --font-sans: "Gowun Dodum", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   --font-serif: 'Nanum Myeongjo', 'Georgia', serif;
   --font-display: 'Cormorant Garamond', 'Nanum Myeongjo', serif;
 
